@@ -1,0 +1,29 @@
+# deps & build
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# env & secrets
+.env
+.env.*
+!.env.example
+
+# editors / OS
+.idea/
+.vscode/
+.DS_Store
+
+# supabase CLI local state
+supabase/.temp/
+supabase/.branches/
+
+# материалы заказчика — не публикуем
+Тестовое задание мини-CRM «Объекты и задачи».docx.md
+
+# logs
+*.log
+npm-debug.log*
+
+# временные файлы агентов
+_tmp_*

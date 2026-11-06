@@ -1,0 +1,36 @@
+{
+  "name": "constructions-crm",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --noEmit",
+    "db:link": "supabase link --project-ref hlqdeswindttznmdvccb",
+    "db:push": "supabase db push",
+    "db:types": "supabase gen types typescript --remote --schema public > src/lib/database.types.ts",
+    "seed": "node --env-file=.env.local scripts/seed.mjs",
+    "test:security": "node --env-file=.env.local scripts/security-tests.mjs"
+  },
+  "dependencies": {
+    "@mantine/core": "^9.7.5",
+    "@mantine/hooks": "^9.7.5",
+    "@mantine/notifications": "^9.7.5",
+    "@supabase/supabase-js": "^2.119.0",
+    "@tabler/icons-react": "^3.50.0",
+    "@tanstack/react-query": "^5.106.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.2.1",
+    "supabase": "^3.0.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.6"
+  }
+}
