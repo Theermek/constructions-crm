@@ -4,6 +4,8 @@ CRM для строительной компании: постановщик в�
 берёт задачи в работу и сдаёт на проверку. Цикл статусов и история изменений защищены на уровне
 базы данных.
 
+**Приложение:** https://constructions-crm.vercel.app
+
 **Стек:** React 19 + TypeScript + Vite, Mantine, TanStack Query, Supabase (Postgres + Auth + REST).
 
 Сопутствующие документы:

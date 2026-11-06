@@ -27,3 +27,5 @@ npm-debug.log*
 
 # временные файлы агентов
 _tmp_*
+.vercel
+.env*
